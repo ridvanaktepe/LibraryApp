@@ -3,7 +3,7 @@
 //for database migration, run the following commands  in LibraryApp.Data folder
 dotnet ef migrations add migrationName --startup-project ..\LibraryApp.Service
 dotnet ef database update --startup-project ..\LibraryApp.Service
-dotnet ef migrations remove
+
 
 //run the following commands to run the project
 dotnet build
