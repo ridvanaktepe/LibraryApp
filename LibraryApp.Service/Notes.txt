@@ -13,15 +13,18 @@ dotnet watch run
 
 Authors Table
 Id		Name
-1		Niccolo Machiavelli
-2		Fyodor Dostoyevski
+1		  Niccolo Machiavelli
+2		  Fyodor Dostoyevski
+3		  William Shakespeare
 
 Books Table
-Id	AuthorId	CheckedOut	ISBN			LibraryId	Title
-1	1			1			978-1514649312	1			Prince
-2	2			1			978-0140449136	1			Crime and Punishment
-3	2			1			978-0140449242	2			The Brothers Karamazov
-4	2			0			978-0241252086	1			White Nights
+Id	AuthorId	CheckedOut	ISBN			      LibraryId	  Title
+1	  1			    1			      978-1514649312	1			      Prince
+2	  2			    1			      978-0140449136	1			      Crime and Punishment
+3	  2			    1			      978-0140449242	2			      The Brothers Karamazov
+4	  2			    0			      978-0241252086	1			      White Nights
+5   3         1           978-0743477109  2           Macbeth                
+6	  3			    0			      979-8630242716	1			       Hamlet
 
 Libraries Table
 Id
