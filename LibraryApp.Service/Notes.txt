@@ -1,0 +1,29 @@
+﻿dotnet tool install --global dotnet-ef
+
+//for database migration, run the following commands  in LibraryApp.Data folder
+dotnet ef migrations add migrationName --startup-project ..\LibraryApp.Service
+dotnet ef database update --startup-project ..\LibraryApp.Service
+dotnet ef migrations remove
+
+//run the following commands to run the project
+dotnet build
+dotnet watch run
+
+
+
+Authors Table
+Id		Name
+1		Niccolo Machiavelli
+2		Fyodor Dostoyevski
+
+Books Table
+Id	AuthorId	CheckedOut	ISBN			LibraryId	Title
+1	1			1			978-1514649312	1			Prince
+2	2			1			978-0140449136	1			Crime and Punishment
+3	2			1			978-0140449242	2			The Brothers Karamazov
+4	2			0			978-0241252086	1			White Nights
+
+Libraries Table
+Id
+1
+2
